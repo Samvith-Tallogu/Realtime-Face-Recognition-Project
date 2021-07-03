@@ -1,0 +1,38 @@
+body{
+    background-image: url("background.jpg");
+}
+.heading{
+    font-size: 24px !important;
+    width: 70%;
+    text-align: center;
+    margin: 0px;
+    box-shadow: 6px 6px 18px grey;
+    border-radius: 20px !important;
+}
+.heading_div{
+    font-size: 18px;
+    float: none;
+    width: 100%;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    color: red;
+    box-shadow: 4px 4px 18px black;
+    padding: 10px;
+}
+footer{
+    background-color: grey;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    line-height: 2.3;
+    text-align: center;
+    margin-left: 360px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+@keyframes Example{
+    from{box-shadow: 1px 1px 15px orange;}
+    to{box-shadow: 1px 1px 15px skyblue}
+}
