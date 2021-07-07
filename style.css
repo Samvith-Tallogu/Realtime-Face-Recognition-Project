@@ -32,7 +32,16 @@ footer{
     margin-bottom: 8px;
     border-radius: 8px;
 }
-@keyframes Example{
-    from{box-shadow: 1px 1px 15px orange;}
-    to{box-shadow: 1px 1px 15px skyblue}
+.result_para_tag{
+    box-shadow: 4px 4px 12px grey;
+    font-size: 18px;
+}
+
+canvas{
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+    margin-top:150px;
+    margin-left: 10px;
+
 }
