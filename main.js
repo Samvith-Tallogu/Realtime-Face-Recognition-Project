@@ -4,7 +4,19 @@ function setup(){
  canvas.center();
  video = createCapture(VIDEO);
  video.hide();
+ classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/Gu0XVCJ2J/model.json')
 }
 function draw() {
     image(video, 0, 0, 450, 340);
+    classifier.classify(video, gotResult);
+}
+
+function gotResult(error, results) {
+    if (error) {
+        console.error(error);
+    }
+    else{
+        console.log(results);
+        document.getElementById('result_object_name').innerHTML = results[0].label;
+    }
 }
